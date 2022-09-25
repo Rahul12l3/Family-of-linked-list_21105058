@@ -1,5 +1,5 @@
 //name--rahul       sid--21105058
-include <bits/stdc++.h>                   
+#include <bits/stdc++.h>                   
 using namespace std;                  
 class Node{
     public:
@@ -111,32 +111,32 @@ void pop(Node*&head){
 }
 
 int main(){
-    Node*head=NULL;
+    	Node*head=NULL;
 	int no_of_members;
 	cout<<"Enter the number of family members:";
-    cin>>no_of_members;
+    	cin>>no_of_members;
 	for(int i=1;i<=no_of_members;i++){
 		string name;
 		int age;
 		cout<<"Enter family member number"<<i<<" name:";
 		
 		//To prevent getlien from taking white space caused by previous cin to take as input we ignore one cin 
-        cin.ignore();
+        	cin.ignore();
 		getline(cin,name);
 		
 		cout<<"Enter family member number "<<i<<" age:";
-        cin>>age;
+        	cin>>age;
 		push_at_back(head,name,age);
 	}
-    cout<<endl;
-    cout<<"The Doubly Linked list is shown below:"<<endl<<endl;
-    print_from_start(head);
+    	cout<<endl;
+    	cout<<"The Doubly Linked list is shown below:"<<endl<<endl;
+    	print_from_start(head);
 }
 
 // Bonus Question :
 /*
 Try to find a way to link the family members' doubly-linked list based on their relationship. (Is it possible?)
 --
-One way is to take the input in form of the levels of a family tree , ie, taking the input generation wise and inserting the nodes
+one can take input in form of the levels of a family tree , i.e, one can take the input generation wise and insert the nodes
 in the list order-wise as in an generic tree.
 */
