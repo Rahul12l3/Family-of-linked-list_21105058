@@ -134,8 +134,6 @@ int main(){
 }
 
 // Bonus Question :
-/*
-Try to find a way to link the family members' doubly-linked list based on their relationship. (Is it possible?)
 --
 one can take input in form of the levels of a family tree , i.e, one can take the input generation wise and insert the nodes
 in the list order-wise as in an generic tree.
