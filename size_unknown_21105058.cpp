@@ -7,7 +7,7 @@ using namespace std;
 
 // QUESTION:How would you search for an element in an array/list whose size is unknown?
 
-int binary_search(int arr[],int i,int j,int key){
+int simple_binary_search(int arr[],int i,int j,int key){
 
     int m=(i+j)/2;
 
@@ -34,14 +34,15 @@ int binary_search(int arr[],int i,int j,int key){
 
 //modified Binary search for array with unknown lenght
 int binary_search_unknown(int arr[],int key){
-    //Initializing i as 0 and j as 1.
+    //Initialize i as 0 and j as 1.
     int i=0,j=1;
     while(arr[j]<key){
         i=j;
         j=2*j;
-    }
-    //Now calling Simple Binary Search on range i to j.
-    return binary_search(arr,i,j,key);
+    } 
+    
+    // calling Simple Binary Search on range i to j.
+    return simple_binary_search(arr,i,j,key);
 }
 
 int main(){
