@@ -1,6 +1,6 @@
-//                       Roshan Tripathi
-//                       ECE 21105086
-/*                         
+// name->rahul
+//sid->21105058
+//branch->ece
                                                             ans->1;
 An "In-Place" sorting algorithm is algorithm whose space complexity lies between O(1) and O(logn) both included.
 We can say an in-place algorithm is an algorithm that does need a small extra space and produces an output in the same memory,
